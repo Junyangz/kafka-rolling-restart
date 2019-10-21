@@ -15,10 +15,10 @@ Role Variables
 | Variable Name         | Description                                                                                                               | Default Value   |
 |:----------------------|:--------------------------------------------------------------------------------------------------------------------------|:----------------|
 | ZOOKEEPER_CONNECT     | Not currently in use                                                                                                      | kafka-topics    |
-| NUMBER_OF_RETRIES     | The number of times to check whether all under-replicated partitions have been fixed.                                     | 10              |
-| DELAY_BETWEEN_RETRIES | Seconds to wait between retries.                                                                                          | 15              |
-| KAFKA_SERVICE_NAME    | Name of the Kafka service to be restarted.                                                                                | confluent-kafka |
-| KAFKA_TOPICS_COMMAND  | Name (and path if necessary) of the kafka-topics tool - this is mostly to distinguish between Apache and Confluent Kafka. | kafka-topics    |
+| NUMBER_OF_RETRIES     | The number of times to check whether all under-replicated partitions have been fixed.                                     | 20              |
+| DELAY_BETWEEN_RETRIES | Seconds to wait between retries.                                                                                          | 60              |
+| KAFKA_SERVICE_NAME    | Name of the Kafka service to be restarted.                                                                                | kafka |
+| KAFKA_TOPICS_COMMAND  | Name (and path if necessary) of the kafka-topics tool - this is mostly to distinguish between Apache and Confluent Kafka. | /opt/apps/kafka/bin/kafka-topics.sh    |
 
 
 
